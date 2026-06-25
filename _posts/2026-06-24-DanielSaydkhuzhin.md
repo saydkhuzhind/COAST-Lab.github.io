@@ -1,7 +1,7 @@
 ---
 layout: lab-member
 title: Daniel Saydkhuzhin
-img: Daniel_Saydkhuzhin_lab_website_photo.png
+img: Saydkhuzhin_Headshot.jpg
 categories: lab-member-current
 ---
 
