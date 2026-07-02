@@ -1,8 +1,22 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Read the CSV
-df = pd.read_csv("B9490000.csv", header=8)
+###first steps
+##CREATE A VIRTUAL ENVIRONMENT
+#Cmd + Shift + P
+#Python: Select Interpreter
+#Create a Virtual Environment
+#Venv
+#Python 3.13.3
+#which python (should bring back "/Users/daniel/Desktop/Thesis Stuff/COAST-Lab.github.io-1/.venv/bin/python")
+##if above step does not work, try to activate virtual environment
+#in terminal: pip install pandas matplotlib
+from pathlib import Path
+
+project_dir = Path(__file__).parent.parent
+data_dir = project_dir / "LCFRP_data"
+
+df = pd.read_csv(data_dir / "B9790000.csv", skiprows=10)
 
 # Create one datetime column
 df["measurement_time"] = pd.to_datetime(
