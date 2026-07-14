@@ -1,0 +1,22 @@
+Data was downloaded on July 6 2026 2:01 pm
+The data contains the remarks code. 
+For Help with the remarks code, please check http://www.cormp.org/CFP/CFPremarks.php
+
+Station Info:
+Station,HUC,Latitude,Longitude,Location,County,Comment,Stream Class,Sub Basin,Active
+B6480000/MCFRBA_FORMER_C3,3030004,35.41000,-78.75000,"BUIES CRK AT US 421 AT BUIES CREEK","Harnett","","WS-IV",CPF07,no
+
+Query Results: 
+Stations:B6480000	 Time Period: 1996-01-01-2026-07-06
+station,date,time,quality control,depth(m),Temperature(C),Temperature_rmk,pH(su),pH_rmk,Dissolved Oxygen(mg/L),Dissolved Oxygen_rmk,Conductivity(umhos/cm),Conductivity_rmk,Fecal Coliform(col/100ml),Fecal Coliform_rmk,Enterococcus(col/100ml),Enterococcus_rmk,Turbidity(NTU),Turbidity_rmk,Suspended Residue(mg/L),Suspended Residue_rmk,Chlorophyll-a(ug/L),Chlorophyll-a_rmk,NH3-N(mg/L),NH3-N_rmk,TKN-N(mg/L),TKN-N_rmk,NO2-NO3(mg/L),NO2-NO3_rmk,Phosphorus(mg/L),Phosphorus_rmk,Cadmium(ug/L),Cadmium_rmk,Chromium(ug/L),Chromium_rmk,Copper(ug/L),Copper_rmk,Nickel(ug/L),Nickel_rmk,Lead(ug/L),Lead_rmk,Zinc(ug/L),Zinc_rmk,Aluminum(ug/L),Aluminum_rmk,Iron(ug/L),Iron_rmk,Manganese(ug/L),Manganese_rmk,Mercury(ug/L),Mercury_rmk,Arsenic(ug/L),Arsenic_rmk,Hardness(mg/L),Hardness_rmk
+B6480000,2002-10-23,13:53:00,Yes,0.1,16.4,,6.2,,4.5,,100,,273,B4,0,\N,5.8,,4.8,,0,,0.1,,0.6,,0.6,,0.07,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2002-11-15,11:50:00,Yes,0.1,12.5,,6.4,,6.2,,137,,72,,0,\N,3.1,,2.3,,0,,0.05,,0.3,,0.1,,0.06,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2002-12-09,16:33:00,Yes,0.1,5,,6.9,,11.2,,196,,15,B1,0,\N,1.1,,2,,0,,0.07,,0.4,,1,,0.04,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2002-12-19,13:38:00,Yes,0.1,7.6,,5.4,,9.5,,130,,44,,0,\N,1.7,,3.1,,0,,0.02,,0.1,,0.6,,0.02,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-01-27,00:42:00,Yes,0.1,1.9,,6.8,,12.9,,114,,20,B1,0,\N,1.4,,1.1,U,0,,0.04,,0.5,,0,,0.02,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-02-24,13:30:00,Yes,0.1,10,,6.1,,10.3,,97,,27,B1,0,\N,4.2,,4.4,,0,,0.03,,0.5,U,0.7,,0.04,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-03-21,00:21:00,Yes,0.1,13,,6.2,,8.8,,73,,500,,0,\N,9.1,,8.8,,0,,0.05,,0.5,,0.6,,0.08,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-04-21,11:49:00,Yes,0.1,16,,6.5,,8.1,,72,,34,B1,0,\N,4.6,,5,,0,,0.02,,0.6,,0.17,,0.04,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-05-30,00:07:00,Yes,0.1,19,,6.4,,7.4,,68,,109,,0,\N,6,,5.5,,0,,0.04,,0.8,,0.15,,0.06,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-06-06,10:57:00,Yes,0.1,21,,6.5,,6.4,,74,,92,,0,\N,6,,5.5,,0,,0.13,,0.7,,0.11,,0.06,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B6480000,2003-06-25,13:34:00,Yes,0.1,26,,6.6,,6.4,,77,,110,,0,\N,5.8,,3.5,,0,,0.07,,0.7,,0.16,,0.06,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
