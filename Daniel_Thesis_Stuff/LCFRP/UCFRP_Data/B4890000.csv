@@ -1,0 +1,28 @@
+Data was downloaded on July 6 2026 2:06 pm
+The data contains the remarks code. 
+For Help with the remarks code, please check http://www.cormp.org/CFP/CFPremarks.php
+
+Station Info:
+Station,HUC,Latitude,Longitude,Location,County,Comment,Stream Class,Sub Basin,Active
+B4890000/UCFRBA_49,3030003,35.77000,-79.78000,"HASKETT CRK AT SR 2128 NR CENTRAL FALLS","Randolph","","C",CPF09,no
+
+Query Results: 
+Stations:B4890000	 Time Period: 1996-01-01-2026-07-06
+station,date,time,quality control,depth(m),Temperature(C),Temperature_rmk,pH(su),pH_rmk,Dissolved Oxygen(mg/L),Dissolved Oxygen_rmk,Conductivity(umhos/cm),Conductivity_rmk,Fecal Coliform(col/100ml),Fecal Coliform_rmk,Enterococcus(col/100ml),Enterococcus_rmk,Turbidity(NTU),Turbidity_rmk,Suspended Residue(mg/L),Suspended Residue_rmk,Chlorophyll-a(ug/L),Chlorophyll-a_rmk,NH3-N(mg/L),NH3-N_rmk,TKN-N(mg/L),TKN-N_rmk,NO2-NO3(mg/L),NO2-NO3_rmk,Phosphorus(mg/L),Phosphorus_rmk,Cadmium(ug/L),Cadmium_rmk,Chromium(ug/L),Chromium_rmk,Copper(ug/L),Copper_rmk,Nickel(ug/L),Nickel_rmk,Lead(ug/L),Lead_rmk,Zinc(ug/L),Zinc_rmk,Aluminum(ug/L),Aluminum_rmk,Iron(ug/L),Iron_rmk,Manganese(ug/L),Manganese_rmk,Mercury(ug/L),Mercury_rmk,Arsenic(ug/L),Arsenic_rmk,Hardness(mg/L),Hardness_rmk
+B4890000,2000-04-27,00:00:00,Yes,0,17,,7.3,,8.3,,979,,510,,0,\N,4.6,,6,,0,,0,Z,0,Z,0,Z,0.92,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-05-05,00:00:00,Yes,0,21.7,,7.6,,7.6,,1083,,210,,0,\N,4.3,,7,,0,Z,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-05-19,00:00:00,Yes,0,24.2,,7.7,,6.9,,1209,,0,,0,\N,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B4890000,2000-06-06,00:00:00,Yes,0,23,,7.5,,7.5,,745,,280,,0,\N,6.2,,10,,0,Z,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-06-20,00:00:00,Yes,0,25.8,,7.7,,6.5,,1036,,0,,0,\N,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B4890000,2000-07-07,00:00:00,Yes,0,25.9,,7.5,,6.7,,815,,2400,,0,\N,7.2,,18,,2,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-07-20,00:00:00,Yes,0,27.7,,7.4,,6.4,,1116,,0,,0,\N,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B4890000,2000-08-03,00:00:00,Yes,0,27,,7.6,,6.1,,983,,130,,0,\N,3.6,,4,,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-08-22,00:00:00,Yes,0,25.4,,7.9,,6.9,,1176,,0,,0,\N,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B4890000,2000-09-07,00:00:00,Yes,0,22.4,,7,,6.8,,1109,,280,,0,\N,2.8,,15,,0,Z,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-09-21,00:00:00,Yes,0,21.9,,7.4,,6.8,,1480,,0,,0,\N,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,,0,
+B4890000,2000-10-11,00:00:00,Yes,0,18.8,,7.8,,7.8,,1505,,36,,0,\N,0.7,,1,,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-11-21,00:00:00,Yes,0,11.9,,7.8,,8.1,,826,,54,,0,\N,4.8,,8.5,,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2000-12-06,00:00:00,Yes,0,10.7,,7.5,,8.8,,1058,,108,,0,\N,5.5,,1,J2,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2001-01-18,00:00:00,Yes,0,12.5,,7.5,,9.4,,1067,,720,,0,\N,5.1,,4.5,,5.4,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2001-02-16,00:00:00,Yes,0,15.9,,7.6,,7.7,,1035,,116,,0,\N,7,,5,,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
+B4890000,2001-03-15,00:00:00,Yes,0,16,,7.5,,8,,1030,,980,,0,\N,16,,16,,0,,0,,0,,0,,0,,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,Z,0,,0,Z,0,Z,0,
