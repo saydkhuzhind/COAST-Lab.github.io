@@ -1,0 +1,161 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import csv
+import io
+import re
+from pathlib import Path
+
+###first steps
+##CREATE A VIRTUAL ENVIRONMENT
+#Cmd + Shift + P
+#Python: Select Interpreter
+#Create a Virtual Environment
+#Venv
+#Python 3.13.3
+#which python (should bring back "/Users/daniel/Desktop/Thesis Stuff/COAST-Lab.github.io-1/.venv/bin/python")
+##if above step does not work, try to activate virtual environment
+#in terminal: pip install pandas matplotlib
+
+project_dir = Path(__file__).parent.parent
+
+file_name = "B8340050.csv"
+
+folders = ["LCFRP_Data", "MCFRP_Data", "UCFRP_Data"]
+
+data_path = None
+
+for folder in folders:
+    candidate = project_dir / folder / file_name
+    if candidate.exists():
+        data_path = candidate
+        break
+
+if data_path is None:
+    raise FileNotFoundError(f"Could not find {file_name}")
+
+# -----------------------------
+# Repair malformed CSV rows
+# -----------------------------
+with open(data_path, "r", newline="", encoding="utf-8") as f:
+    reader = csv.reader(f)
+    rows = list(reader)
+
+# Header is after the 10 metadata lines
+header = rows[10]
+expected_cols = len(header)
+
+remark_idx = header.index("Fecal Coliform_rmk")
+
+fixed_rows = rows[:11]      # metadata + header
+
+code_pattern = re.compile(r"^[A-Za-z]\d$")
+
+for line_num, row in enumerate(rows[11:], start=12):
+
+    # Normal row
+    if len(row) == expected_cols:
+        fixed_rows.append(row)
+        continue
+
+    # Row has one extra column
+    if len(row) == expected_cols + 1:
+
+        first = row[remark_idx].strip()
+        second = row[remark_idx + 1].strip()
+
+        if (
+            code_pattern.fullmatch(first)
+            and code_pattern.fullmatch(second)
+        ):
+            print(f"Fixed line {line_num}: {first}, {second}")
+
+            row[remark_idx] = first + "+" + second
+            del row[remark_idx + 1]
+
+    fixed_rows.append(row)
+
+buffer = io.StringIO()
+writer = csv.writer(buffer)
+writer.writerows(fixed_rows)
+buffer.seek(0)
+
+df = pd.read_csv(buffer, skiprows=10)
+
+print(f"Reading {data_path}")
+
+# Create one datetime column
+df["measurement_time"] = pd.to_datetime(
+    df["date"] + " " + df["time"]
+)
+
+# Keep only the columns we need
+df = df[[
+    "measurement_time",
+    "depth(m)",
+    "Temperature(C)",
+    "Conductivity(umhos/cm)"
+]]
+
+#Creating Depth Classes
+surface = df[df["depth(m)"] < 0.5]
+
+middle = df[
+    (df["depth(m)"] >= 0.5) &
+    (df["depth(m)"] < 2.0)
+]
+
+deep = df[df["depth(m)"] >= 2.0]
+
+# Plot
+fig, ax1 = plt.subplots(figsize=(12, 6))
+
+ax1.plot(
+    surface["measurement_time"],
+         surface["Temperature(C)"],
+         color="red",
+         label="Surface Temperature")
+ax1.set_ylabel("Temperature (°C)", color="red")
+
+ax2 = ax1.twinx()
+ax2.plot(
+    surface["measurement_time"],
+    surface["Conductivity(umhos/cm)"],
+    color="lightskyblue",
+    label="Surface"
+)
+
+ax2.plot(
+    middle["measurement_time"],
+    middle["Conductivity(umhos/cm)"],
+    color="dodgerblue",
+    label="Mid-depth"
+)
+
+ax2.plot(
+    deep["measurement_time"],
+    deep["Conductivity(umhos/cm)"],
+    color="navy",
+    label="Deep"
+),
+        
+ax2.set_ylabel("Conductivity (µmhos/cm)", color="blue")
+ax1.legend(loc="upper left")
+ax2.legend(loc="upper right")
+
+# Add a faint dotted line at January 1st of each year
+start_year = df["measurement_time"].dt.year.min()
+end_year = df["measurement_time"].dt.year.max()
+
+for year in range(start_year, end_year + 1):
+    ax1.axvline(
+        pd.Timestamp(f"{year}-01-01"),
+        color="gray",
+        linestyle=":",
+        linewidth=0.8,
+        alpha=0.5
+    )
+
+plt.title("Temperature and Conductivity Over Time")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
