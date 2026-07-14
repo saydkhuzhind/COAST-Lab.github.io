@@ -18,7 +18,7 @@ from pathlib import Path
 
 project_dir = Path(__file__).parent.parent
 
-file_name = "B8340050.csv"
+file_name = "B8349000.csv"
 
 folders = ["LCFRP_Data", "MCFRP_Data", "UCFRP_Data"]
 
@@ -101,13 +101,14 @@ surface = df[df["depth(m)"] < 0.5]
 
 middle = df[
     (df["depth(m)"] >= 0.5) &
-    (df["depth(m)"] < 2.0)
+    (df["depth(m)"] < 3.5)
 ]
 
-deep = df[df["depth(m)"] >= 2.0]
+deep = df[df["depth(m)"] >= 3.5]
 
 # Plot
-fig, ax1 = plt.subplots(figsize=(12, 6))
+fig, ax1 = plt.subplots(figsize=(10,6))
+plt.ylim(-10,40)
 
 ax1.plot(
     surface["measurement_time"],
@@ -121,21 +122,21 @@ ax2.plot(
     surface["measurement_time"],
     surface["Conductivity(umhos/cm)"],
     color="lightskyblue",
-    label="Surface"
+    label="Surface(<0.5m depth) Conductivity"
 )
 
 ax2.plot(
     middle["measurement_time"],
     middle["Conductivity(umhos/cm)"],
     color="dodgerblue",
-    label="Mid-depth"
+    label="Mid-depth(0.5-3.5m depth) Conductivity"
 )
 
 ax2.plot(
     deep["measurement_time"],
     deep["Conductivity(umhos/cm)"],
     color="navy",
-    label="Deep"
+    label="Deep(>3.5m depth) Conductivity"
 ),
         
 ax2.set_ylabel("Conductivity (µmhos/cm)", color="blue")
